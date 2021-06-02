@@ -44,7 +44,7 @@ nav {
 }
 
 .main-menu li {
-   
+   transition: 1s;
     font-size: 20px;
     margin: 0px 15px;
     align-content: center;
@@ -58,4 +58,11 @@ nav {
 .open-menu {
     display: none;
     cursor: pointer;
+}
+
+li:hover {
+    font-size: 22px;
+    padding: 0px 10px;
+    margin-bottom: 1px;
+    color: white;
 }
