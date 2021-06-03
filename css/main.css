@@ -70,8 +70,9 @@ nav {
 
 @media(max-width: 800px) {
     .main-menu {
-        height: 50%;
+        height: 18%;
         position: fixed;
+        padding-top: 70px;
         top: 0;
         left: 0;
         right: 0;
@@ -88,17 +89,15 @@ nav {
         display: block;
     }
 
-    .main-menu li {
-        font-size: 20px;
-        margin: 0px 15px;
-        align-content: center;
-        cursor: pointer;
+    .nav-content-container li {
+        transition: none !important;
+        margin: 5px 0px;
     }
 
     .nav-content-container li:hover {
         font-size: 20px;
-        padding: 0px;
-        margin-bottom: 0px;
+        padding: 0px 10px;
+        margin-bottom: 5px;
         color: #909DA0;
     }
 }

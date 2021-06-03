@@ -16,6 +16,6 @@ function open() {
 
 function close() {
     console.log('close');
-    mainMenu.style.top = '-50%';
+    mainMenu.style.top = '-30%';
     menuIsOpen = false;
 }
