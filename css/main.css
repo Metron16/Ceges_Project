@@ -8,7 +8,7 @@
 
 a {
     text-decoration: none;
-    color: lightgray;
+    color: white;
     transition: 1s;
 }
 
@@ -19,7 +19,7 @@ a:hover {
 nav {
     width: 100%;
     height: 80px;
-    background-color:#343A40;
+    position: absolute;
     color: #909DA0;
 }
 
@@ -28,7 +28,7 @@ nav {
     height: 100%;
     margin: 0px auto;
     display: flex;
-    justify-content: space-between;
+    
 }
 
 .nav-content-container img {
@@ -42,19 +42,17 @@ nav {
     display: flex;
     align-items: center;
     list-style: none;
+    margin-left: 50px;
 }
 
 .main-menu li {
     transition: 1s;
     font-size: 20px;
     margin: 0px 15px;
-    align-content: center;
     cursor: pointer;
 }
 
-.main-menu li a {
-    display: inline-block;
-}
+
 
 .menu-controller {
     display: none;
@@ -74,9 +72,9 @@ nav {
     .main-menu {
         height: 18%;
         position: fixed;
-        padding-top: 70px;
+        padding-top: 30px;
         top: 0;
-        left: 0;
+        left: 100px; /* Ezt majd olyan szélesre kell állítani, hogy a logót ne takarja */
         right: 0;
         z-index: 0;
         flex-direction: column;
@@ -85,10 +83,15 @@ nav {
         display: none;
         background-color: #343A40;
         opacity: 90%;
+        border-radius: 0px 0px 0px 10px;
     }
 
     .menu-controller {
         display: block;
+    }
+
+    .nav-content-container {
+        justify-content: space-between;
     }
 
     .nav-content-container li {
@@ -104,10 +107,14 @@ nav {
     }
 }
 
+
+
 main {
     max-width: 1200px;
     margin: 0px auto;
 }
+
+
 
 .slider {
 	overflow: hidden;
@@ -157,4 +164,91 @@ main {
 	100% {
 		left: -400%;
 	}
+}
+
+
+.introdouce {
+    font-size: 25px;
+    color: #222222;
+    background-color: #E9ECEF;
+    padding: 60px 40px 70px 40px;
+}
+
+.introdouce p {
+    display: inline;
+}
+
+.introdouce button {
+    color: gray;
+    float: right;
+    font-size: 25px;
+    height: 50px;
+    width: 150px;
+    margin-top: 10px;
+    margin-right: 55px;
+    border-radius: 8px;
+    background-color: #E9ECEF;
+    border: none;
+    border: 1px solid gray;
+    transition: 0.2s;
+}
+
+.introdouce button:hover {
+    color: whitesmoke;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.welcome-section {
+    margin-top: 50px;
+}
+
+.welcome-section .message {
+    text-align: center;
+    width: 70%;
+    margin: 0px auto;
+    margin-bottom: 50px;
+}
+
+.welcome-section h1 {
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.welcome-section .message hr {
+    color: lightgray;
+}
+
+.welcome-section .grid-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.welcome-section .grid-container .first-el {
+    width: 33%;
+}
+
+.welcome-section .grid-container .second-el {
+    width: 33%;
+}
+
+.welcome-section .grid-container .third-el {
+    width: 33%;
+}
+
+@media(max-width: 1200px) {
+    .welcome-section .grid-container .first-el {
+    width: initial
+    }
+
+    .welcome-section .grid-container .second-el {
+        width: initial;
+    }
+
+    .welcome-section .grid-container .third-el {
+        width: initial;
+    }
 }

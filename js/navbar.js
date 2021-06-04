@@ -1,3 +1,4 @@
+const main = document.querySelector('main');
 const mainMenu = document.querySelector('.main-menu');
 const menuController = document.querySelector('.menu-controller');
 
@@ -11,6 +12,7 @@ function open() {
     console.log('open');
     mainMenu.style.display = 'flex';
     mainMenu.style.top = '0';
+    
     menuIsOpen = true;
 }
 
