@@ -73,7 +73,7 @@ nav {
         position: fixed;
         padding-top: 0px;
         top: 0;
-        left: 25%; /* Ezt majd olyan szélesre kell állítani, hogy a logót ne takarja */
+        left: 35%; /* Ezt majd olyan szélesre kell állítani, hogy a logót ne takarja */
         right: 0;
         z-index: 0;
         flex-direction: column;
@@ -95,7 +95,7 @@ nav {
 
     .nav-content-container li {
         transition: none !important;
-        margin: 2vw 0px;
+        margin: 5px 0px;
     }
 
     .nav-content-container li:hover {
@@ -250,8 +250,8 @@ main {
     }
 }
 .logo{
-    width: 25%;
-    padding-top: 50px;
+    width: 170px;
+    margin-top: 5px;
 }
 
 footer {
