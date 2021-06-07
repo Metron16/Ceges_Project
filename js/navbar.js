@@ -9,7 +9,6 @@ menuController.addEventListener('click', function() {
 });
 
 function open() {
-    console.log('open');
     mainMenu.style.display = 'flex';
     mainMenu.style.top = '0';
     
@@ -17,7 +16,6 @@ function open() {
 }
 
 function close() {
-    console.log('close');
     mainMenu.style.top = '-40vw';
     menuIsOpen = false;
 }
