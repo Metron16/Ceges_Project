@@ -18,6 +18,6 @@ function open() {
 
 function close() {
     console.log('close');
-    mainMenu.style.top = '-30%';
+    mainMenu.style.top = '-40vw';
     menuIsOpen = false;
 }
