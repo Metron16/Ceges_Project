@@ -83,7 +83,7 @@ main {
 
 .introdouce button:hover {
     color: whitesmoke;
-    background-color: purple;
+    background-color: #6648B1;
     cursor: pointer;
 }
 
