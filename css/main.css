@@ -4,6 +4,7 @@
     padding: 0px;
     margin: 0px;
     font-family: Poppins;
+    color: #222222;
 }
 
 a {
@@ -30,10 +31,19 @@ nav {
     display: flex;
 }
 
+.nav-content-container .logo {
+    width: 170px;
+    margin-top: 5px;
+    transition: 1s;
+}
+
+.nav-content-container .logo:hover {
+    width: 180px;
+}
+
 .nav-content-container img {
     align-self: center;
     margin-left: 15px;
-    z-index: 1;
 }
 
 .main-menu {
@@ -67,51 +77,10 @@ nav {
     color: white;
 }
 
-@media(max-width: 800px) {
-    .main-menu {
-        height: 40vw;
-        position: fixed;
-        padding-top: 0px;
-        top: 0;
-        left: 35%; /* Ezt majd olyan szélesre kell állítani, hogy a logót ne takarja */
-        right: 0;
-        z-index: 0;
-        flex-direction: column;
-        justify-content: center;
-        transition: top 1s ease;
-        display: none;
-        background-color: #343A40;
-        opacity: 90%;
-        border-radius: 0px 0px 0px 10px;
-    }
-
-    .menu-controller {
-        display: block;
-    }
-
-    .nav-content-container {
-        justify-content: space-between;
-    }
-
-    .nav-content-container li {
-        transition: none !important;
-        margin: 5px 0px;
-    }
-
-    .nav-content-container li:hover {
-        font-size: 20px;
-        padding: 0px 10px;
-        margin-bottom: 5px;
-        color: #909DA0;
-    }
-}
-
 main {
     width: 100%;
     margin: 0px auto;
 }
-
-
 
 .slider {
 	overflow: hidden;
@@ -165,10 +134,11 @@ main {
 
 
 .introdouce {
-    font-size: 25px;
+    font-size: 1.5vw;
     color: #222222;
     background-color: #E9ECEF;
     padding: 60px 40px 70px 40px;
+    box-shadow: 5px 5px 30px black;
 }
 
 .introdouce p {
@@ -192,66 +162,53 @@ main {
 
 .introdouce button:hover {
     color: whitesmoke;
-    background-color: gray;
+    background-color: purple;
     cursor: pointer;
 }
 
+
+
 .welcome-section {
-    margin-top: 50px;
+   margin: 50px;
+}
+
+.welcome-section h1 {
+    font-size: 2.5vw;
+    font-weight: 100;
 }
 
 .welcome-section .message {
     text-align: center;
-    width: 70%;
-    margin: 0px auto;
-    margin-bottom: 50px;
-}
-
-.welcome-section h1 {
-    font-size: 50px;
-    font-weight: 100;
+    width: 80%;
+    margin: 0px auto 60px auto;
+    font-size: 1.8vw;
+    text-align: justify;
 }
 
 .welcome-section .message hr {
     color: lightgray;
+    margin: 50px 0px;
+    box-shadow: 5px 5px 30px black;
 }
 
-.welcome-section .grid-container {
+.welcome-section .flex-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     text-align: center;
 }
 
-.welcome-section .grid-container .first-el {
-    width: 33%;
+.welcome-section .flex-container > * {
+    max-width: 400px;
+    margin: 0px;
+    line-height: 30px;
 }
 
-.welcome-section .grid-container .second-el {
-    width: 33%;
-}
-
-.welcome-section .grid-container .third-el {
-    width: 33%;
-}
-
-@media(max-width: 1200px) {
-    .welcome-section .grid-container .first-el {
-    width: initial
-    }
-
-    .welcome-section .grid-container .second-el {
-        width: initial;
-    }
-
-    .welcome-section .grid-container .third-el {
-        width: initial;
-    }
-}
-.logo{
-    width: 170px;
-    margin-top: 5px;
+.welcome-section h2 {
+    font-size: 30px;
+    font-weight: 200;
+    margin-bottom: 10px;
 }
 
 footer {
@@ -285,4 +242,85 @@ footer {
 
 .footer-content-container .social-network-logo:hover {
     margin-bottom: 5px;
+}
+
+@media(max-width: 1200px) {
+    .introdouce {
+        font-size: 1.8vw;
+    }
+
+    .welcome-section h1 {
+        font-size: 3.5vw;
+    }
+
+    .welcome-section .message {
+        font-size: 2.2vw;
+        width: 100%;
+    }
+}
+
+@media(max-width: 996px) {
+    .welcome-section .flex-container * {
+        max-width: 100%; 
+    }
+
+    .welcome-section .second-el {
+        margin-top: 50px;
+    }
+
+    .welcome-section .third-el {
+        margin-top: 50px;
+    }
+}
+
+
+@media(max-width: 800px) {
+    .main-menu {
+        height: 40vw;
+        position: fixed;
+        padding-top: 0px;
+        top: 0;
+        left: 35%; /* Ezt majd olyan szélesre kell állítani, hogy a logót ne takarja */
+        right: 0;
+        z-index: 0;
+        flex-direction: column;
+        justify-content: center;
+        transition: top 1s ease;
+        display: none;
+        background-color: #343A40;
+        opacity: 90%;
+        border-radius: 0px 0px 0px 10px;
+    }
+
+    .menu-controller {
+        display: block;
+    }
+
+    .nav-content-container {
+        justify-content: space-between;
+    }
+
+    .nav-content-container li {
+        transition: none !important;
+        margin: 5px 0px;
+    }
+
+    .nav-content-container li:hover {
+        font-size: 20px;
+        padding: 0px 10px;
+        margin-bottom: 5px;
+        color: #909DA0;
+    }
+
+    .introdouce {
+        font-size: 3vw;
+    }
+
+    .welcome-section h1 {
+        font-size: 5vw;
+    }
+
+    .welcome-section .message {
+        font-size: 3.5vw;
+    }
 }
