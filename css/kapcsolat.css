@@ -42,6 +42,10 @@
     box-shadow: 5px 5px 20px gray;
 }
 
+.contact a
+{
+    color: blue;    /*Csak hogy ne fehér legyen a link színe*/
+}
 
 @media(max-width: 800px) {
     .main-container {
