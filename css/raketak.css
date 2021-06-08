@@ -1,0 +1,31 @@
+a {
+    color: #222222;
+}
+
+a:hover {
+    color: #222222;
+}
+
+main {
+    background-image: url("../assets/background/raketak.jpg");
+    background-size: cover;
+    background-position-x: 65%;
+    background-clip:content-box;
+    
+}
+
+.main-container {
+    padding: 100px;
+}
+
+.main-container .short-desc h1, .main-container .short-desc p {
+    margin-bottom: 20px;
+}
+
+.main-container li {
+    list-style: none;
+}
+
+.main-container li:last-child {
+    margin-bottom: 20px;
+}
