@@ -15,8 +15,12 @@
     min-height: 300px;
 }
 
-.main-container .contact p {
-    margin: 15px 0px;
+.main-container .contact * {
+    margin-left: 20px;
+}
+
+.main-container .contact li {
+    list-style: none;
 }
 
 .main-container .pics {
