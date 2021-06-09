@@ -1,0 +1,45 @@
+body {
+    background: linear-gradient(white, gray);
+}
+
+.main-container .title {
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.main-container li {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px 0px;
+    text-shadow: 5px 5px 4px lightgray;
+}
+
+.main-container li * {
+    margin: 0px 10px;
+}
+
+.main-container li p {
+    width: 400px;
+}
+
+.main-container li img {
+    width: 500px;
+    box-shadow: 5px 5px 30px black;
+    transition: 1s;
+}
+
+.main-container li img:hover {
+    transform: translateX(-200px) scale(1.5);
+    box-shadow: 20px 20px 50px black;
+}
+
+.main-container li:nth-child(2) img:hover {
+    transform: translateX(200px) scale(1.5);
+}
+
+.main-container li:nth-child(2) {
+    flex-direction: row-reverse;
+}
