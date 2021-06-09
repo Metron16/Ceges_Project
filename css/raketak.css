@@ -1,15 +1,16 @@
 a {
-    color: #222222;
+    color: white;
 }
 
 a:hover {
-    color: #222222;
+    color: white;
 }
 
 main {
-    background-image: url("../assets/background/raketak.jpg");
+    background-image: url("../assets/background/rocket.jpg");
     background-size: cover;
     background-position-x: 65%;
+    background-position-y: 22%;
     background-clip:content-box;
     
 }
@@ -36,6 +37,7 @@ main {
 
 .main-container li {
     list-style: none;
+    color: white;
 }
 
 .main-container li:last-child {
@@ -45,6 +47,11 @@ main {
 .main-container .technical-data .description li {
     font-size: 25px;
     color: teal;
+}
+
+p
+{
+    color: white;
 }
 
 @media(max-width: 800px) {
