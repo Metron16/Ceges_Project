@@ -29,3 +29,13 @@ main {
 .main-container li:last-child {
     margin-bottom: 20px;
 }
+
+@media(max-width: 800px) {
+    a {
+        color: white;
+    }
+
+    a:hover {
+        color: white;
+    }
+}
