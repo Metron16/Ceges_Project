@@ -43,3 +43,29 @@ body {
 .main-container li:nth-child(2) {
     flex-direction: row-reverse;
 }
+
+
+@media(max-width: 1151px) {
+    .main-container li img:hover {
+        transform: scale(1.5);
+        box-shadow: 20px 20px 50px black;
+    }
+
+    .main-container li:nth-child(2) img:hover {
+        transform: scale(1.5);
+    }
+}
+
+@media(max-width: 800px) {
+    .main-container li img {
+        transition: 0.5s;
+    }
+
+    .main-container li img:hover {
+        transform: scale(1.05);
+    }
+
+    .main-container li:nth-child(2) img:hover {
+        transform: scale(1.05);
+    }
+}
