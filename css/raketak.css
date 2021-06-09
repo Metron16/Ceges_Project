@@ -18,6 +18,18 @@ main {
     padding: 100px;
 }
 
+.short-desc h1 {
+    color: tomato;
+}
+
+.main-container h2 {
+    color: darkolivegreen;
+}
+
+.main-container h3 {
+    color:darkslategrey;
+}
+
 .main-container .short-desc h1, .main-container .short-desc p {
     margin-bottom: 20px;
 }
@@ -30,6 +42,11 @@ main {
     margin-bottom: 20px;
 }
 
+.main-container .technical-data .description li {
+    font-size: 25px;
+    color: teal;
+}
+
 @media(max-width: 800px) {
     a {
         color: white;
@@ -37,5 +54,9 @@ main {
 
     a:hover {
         color: white;
+    }
+
+    .main-container {
+        padding: 100px 10px 100px 10px;
     }
 }
