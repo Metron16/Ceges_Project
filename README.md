@@ -3,8 +3,10 @@
 
 ## --------- WP weboldal telepítése--------------
 
-1. XAMPP phpMyAdmin felületén az "astronics.sql" importálása
-2. XAMPP/htdocs-ba a !wordpress/astronics.7z tömörített állomány tartalmának kicsomagolása
+1. XAMPP phpMyAdmin felületén az "astronics" adatbázis létrehozása
+    CREATE DATABASE astronics CHARACTER SET utf8 COLLATE utf8_hungarian_ci
+2.  !wordpress/astronics.sql táblák exportálása az astronics adatbázisba
+3. XAMPP/htdocs-ba a !wordpress/astronics.7z tömörített állomány tartalmának kicsomagolása
 
 ###http://localhost/astronics              <--Oldal
 ###http://localhost/astronics/wp-admin     <--WP admin felület
