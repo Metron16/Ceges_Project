@@ -1,3 +1,7 @@
+body {
+    background: linear-gradient(to right, white, rgba(102, 72, 177, 0.3))
+}
+
 .main-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -15,8 +19,12 @@
     min-height: 300px;
 }
 
-.main-container .contact p {
-    margin: 15px 0px;
+.main-container .contact * {
+    margin-left: 50px;
+}
+
+.main-container .contact li {
+    list-style: none;
 }
 
 .main-container .pics {
