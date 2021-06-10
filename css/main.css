@@ -34,11 +34,6 @@ nav {
 .nav-content-container .logo {
     width: 170px;
     margin-top: 5px;
-    transition: 1s;
-}
-
-.nav-content-container .logo:hover {
-    width: 180px;
 }
 
 .nav-content-container img {
@@ -149,4 +144,3 @@ footer {
         color: #909DA0;
     }
 }
-
